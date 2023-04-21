@@ -1,1 +1,5 @@
-
+Designed and implemented the chat system using
+Transmission Control Protocol. In this chat system multiple
+clients can communicate to each other over a single central server. Client
+sends message and it goes to server which broadcast the message to all
+the clients connected to this server. And they can join or leave as per their requirement .
