@@ -3,3 +3,21 @@ Transmission Control Protocol. In this chat system multiple
 clients can communicate to each other over a single central server. Client
 sends message and it goes to server which broadcast the message to all
 the clients connected to this server. And they can join or leave as per their requirement .
+
+
+Following are steps to be followed for establishing a TCP socket on the server-side:
+•	Use socket() for establishing a socket.
+•	Use the bind() function for binding the socket to an address.
+•	Then for listening client connections use listen() function.
+•	The accept() function is used for accepting the connection of the client.
+•	Transmit data with the help of the read() and write() function.
+
+
+Server Side Script
+The server-side script will attempt to establish a socket and bind it to an IP address and port specified by the user (windows users might have to make an exception for the specified port number in their firewall settings, or can rather use a port that is already open). The script will then stay open and receive connection requests and will append respective socket objects to a list to keep track of active connections. Every time a user connects, 
+a separate thread will be created for that user. In each thread, the server awaits a message and sends that message to other users currently on the chat. If the server encounters an error while trying to receive a message from a particular thread, it will exit that thread. 
+
+
+Client-Side Script
+The client-side script will simply attempt to access the server socket created at the specified IP address and port. Once it connects, it will continuously check as to whether the input comes from the server or from the client, and accordingly redirects output. If the input is from the server, it displays the message on the terminal. If the input is from the user, it sends the message that the user enters to the server for it to be broadcasted to other users.
+This is the client-side script, that each user must use in order to connect to the server.
