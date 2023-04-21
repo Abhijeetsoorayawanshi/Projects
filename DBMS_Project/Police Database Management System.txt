@@ -1,0 +1,30 @@
+
+As the name suggests, the Police Database Management 
+System is a web application that allows all the paper work that 
+are done in the police station to be stored in one single system 
+with great ease. It can help in handling the records easier. 
+Sometimes if there is a need for some information of a 
+particular case then you need to search in huge heap of files 
+where that information is stored in those files. So that will 
+involve in wastage of time and also effort. So, to overcome 
+these problems, the police database management system can be 
+useful. This will reduce a lot of pen and paper work that is 
+involved.
+ The Police Database Management System web 
+application can help in storing the records related to the cases, 
+complaint record, case history and so on. This can allow a 
+person to enter or delete the records if necessary. All these 
+records can be maintained in a single database. Security is 
+maintained so as to ensure that only the authorized users will 
+have access to the system. This application will be one of the 
+useful projects that the police can rely on. This application can 
+help in getting the information of the cases of many years back. 
+It can also help in minimizing most of the work of the police. 
+The features that can be included in this application are as 
+follows:
+• head
+• complaint
+• police
+• police_station
+• update_case
+• user
